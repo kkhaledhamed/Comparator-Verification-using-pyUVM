@@ -19,7 +19,7 @@ A small but complete UVM-style testbench written in Python with [pyuvm](https://
 ## Testbench architecture
 
 <p align="center">
-  <img src="file:///C:/Users/DELL.SXT6O7/Downloads/architecture.svg" alt="Testbench architecture" width="720">
+  <img src="architecture.svg" alt="Testbench architecture" width="720">
 </p>
 
 | File | What it does |
