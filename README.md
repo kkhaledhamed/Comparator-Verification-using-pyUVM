@@ -82,13 +82,10 @@ Waveforms are enabled by default (`WAVES = 1` in the Makefile).
 └── README.md
 ```
 
-## Ideas for next steps
+## Future Works
 
 - Add functional coverage for the `(a, b)` input space. With `WIDTH = 2` there are only 16 combinations, so full coverage is easy to reach.
 - Run the testbench with a larger `WIDTH`.
 - Add a test that asserts reset in the middle of traffic, to check the asynchronous reset path.
 
-## Author
 
-**Khaled Ahmed Hamed**
-Electronics and Communications Engineering, Cairo University
