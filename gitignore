@@ -1,0 +1,24 @@
+# Simulation output
+sim_build/
+transcript
+modelsim.ini
+vsim.wlf
+*.wlf
+*.vcd
+*.fst
+work/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
