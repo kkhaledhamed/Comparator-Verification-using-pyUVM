@@ -29,12 +29,6 @@ A small but complete UVM-style testbench written in Python with [pyuvm](https://
 | `comparator.sv` | The DUT. |
 | `Makefile` | Runs the simulation through cocotb's makefiles. |
 
-### How the pieces work
-
-- **Driver** gets an item, waits for a falling edge, drives `rst_n`, `a` and `b`, then waits for the next rising edge before calling `item_done()`. Driving on the falling edge keeps the inputs stable around the sampling edge.
-- **Monitor** waits for a rising edge, then enters the `ReadOnly` phase so the registered outputs have settled. It samples inputs and outputs together and sends them to the scoreboard.
-- **Scoreboard** computes the expected `eq`/`gt`/`lt` from the sampled inputs and compares. Any mismatch is stored. `check_phase` fails the test if there were mismatches, or if nothing was observed at all (this stops an empty test from passing silently).
-- **Base test** applies a reset sequence first, then calls `run_sequence()`, which each concrete test overrides.
 
 ## Tests
 
