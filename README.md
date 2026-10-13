@@ -18,20 +18,9 @@ A small but complete UVM-style testbench written in Python with [pyuvm](https://
 
 ## Testbench architecture
 
-```
-                 +-------------------------- env --------------------------+
-                 |                                                         |
- test ---------> |  +------------------ agent ------------------+          |
- (runs a         |  |                                           |          |
-  sequence)      |  |  sequencer --> driver --> BFM ==> DUT     |          |
-                 |  |                            ^              |          |
-                 |  |                 monitor <--+              |          |
-                 |  +----------------------|--------------------+          |
-                 |                         | analysis port                 |
-                 |                         v                               |
-                 |                    scoreboard                           |
-                 +---------------------------------------------------------+
-```
+<p align="center">
+  <img src="file:///C:/Users/DELL.SXT6O7/Downloads/architecture.svg" alt="Testbench architecture" width="720">
+</p>
 
 | File | What it does |
 |------|--------------|
@@ -93,6 +82,7 @@ Waveforms are enabled by default (`WAVES = 1` in the Makefile).
 ├── intf.py
 ├── tb_env.py
 ├── Makefile
+├── architecture.svg
 ├── requirements.txt
 ├── results.xml
 └── README.md
